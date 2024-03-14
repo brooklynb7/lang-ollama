@@ -1,0 +1,49 @@
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+  "model": "llama2",
+  "prompt": "Why is the sky blue?"
+}
+
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+  "model": "llama2:13b",
+  "prompt": "Why is the sky blue?",
+  "stream": false
+}
+
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+  "model": "llama2:70b",
+  "prompt": "Why is the sky blue?",
+  "stream": false
+}
+
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+    "model": "llama2", 
+    "keep_alive": 0
+}
+
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+    "model": "llama2:13b", 
+    "keep_alive": 0
+}
+
+###
+POST http://localhost:11434/api/generate HTTP/1.1
+
+{
+    "model": "llama2:70b", 
+    "keep_alive": 0
+}
